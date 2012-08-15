@@ -424,7 +424,7 @@ namespace org.owasp.validator.css
             // check each selector from this rule
             for (int i = 0; i < selectors.getLength(); i++)
             {
-                ElementSelector selector = (ElementSelector) selectors.item(i);
+                ElementSelector selector = selectors.item(i) as ElementSelector;
 
                 if (selector != null)
                 {
